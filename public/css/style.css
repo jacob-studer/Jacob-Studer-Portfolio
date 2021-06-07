@@ -1,0 +1,35 @@
+body {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.landing-page {
+    display: flex;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.headshot-img {
+    max-height: 200px;
+    min-width: 200px;
+    padding: 20px;
+}
+
+div.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.links a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}

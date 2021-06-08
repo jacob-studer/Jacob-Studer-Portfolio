@@ -13,7 +13,7 @@ h1 {
     font-size: 30px;
 }
 
-.landing-page {
+.center-div {
     display: flex;
     margin: auto;
     position: absolute;
@@ -45,9 +45,76 @@ div.links {
     color: white;
     padding: 5px;
     font-size: 20px;
+    /* text-shadow: 0 0 3px grey, 0 0 5px rgba(46, 49, 49, 0.5); */
     /* text-align: right; */
 }
 
 .link-margin-large {
     margin-left: 10px;
 }
+
+/* Link Hover effect */
+.btn{
+    display: block;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn::after{
+    content: "";
+    background: white;
+    mix-blend-mode: exclusion;
+    width: calc(100% + 0px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -5px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.btn:hover::after{
+    height: calc(100% + 8px)
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-name {
+    color: white;
+    margin-top: 10px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-top: 12px;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    
+}
+
+
+/* Portfolio Page specific styling */
+.horizontal-center-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.horizontal-center-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-link {
+    padding: 2%;
+}
+

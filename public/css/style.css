@@ -11,6 +11,7 @@ h1 {
     color: white;
     margin-top: 100px;
     font-size: 30px;
+    /* z-index: 1; */
 }
 
 .center-div {
@@ -65,7 +66,7 @@ div.links {
     content: "";
     background: white;
     mix-blend-mode: exclusion;
-    width: calc(100% + 0px);
+    width: calc(100% + 6px);
     height: 0;
     position: absolute;
     bottom: -4px;
@@ -81,6 +82,8 @@ div.links {
 .navbar {
     display: flex;
     flex-direction: row;
+    /* position: fixed; */
+    z-index: 1;
 }
 
 .nav-name {
@@ -102,7 +105,7 @@ div.links {
 }
 
 
-/* Portfolio Page specific styling */
+/* ----- Portfolio Page specific styling ----- */
 .horizontal-center-1 {
     display: flex;
     justify-content: center;
@@ -114,7 +117,58 @@ div.links {
     flex-wrap: wrap;
 }
 
-.portfolio-link {
+.portfolio-link div{
     padding: 2%;
 }
 
+.text-dec-none {
+    text-decoration: none;
+    color: white;
+}
+
+/* text over image positioning */
+.padding-container {
+    padding: 2%;
+}
+
+.container {
+    position: relative;
+    }
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+.text-block p {
+    font-size: 14px;
+}
+
+/* ----- About me Page specific styling ----- */
+.about-me-center-div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-me-text {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+div.headshot {
+    display: flex;
+    justify-content: center;
+}

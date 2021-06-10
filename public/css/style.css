@@ -133,6 +133,7 @@ div.links {
 
 .container {
     position: relative;
+    margin: 2%;
     }
 
 .text-block {
@@ -171,4 +172,19 @@ div.links {
 div.headshot {
     display: flex;
     justify-content: center;
+}
+
+/* Contact page styling */
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-me-main p {
+    color: white;
+    text-align: center;
+}
+
+.contact-me-main a {
+    text-decoration: underline;
+    color: white;
 }

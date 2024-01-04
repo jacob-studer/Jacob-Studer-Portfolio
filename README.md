@@ -1,8 +1,8 @@
-# Updated-Portfolio-Page-2
+# Jacob-Studer-Portfolio
 
 ---
 
-title: Updated-Portfolio-Page-2
+title: Jacob-Studer-Portfolio
 
 description: Portfolio Page
 
@@ -10,7 +10,7 @@ author: Jacob Studer
 
 created:  2021 Jun 09
 
-modified: 2021 Jun 13
+modified: 2024 Jan 8
 
 ---
 

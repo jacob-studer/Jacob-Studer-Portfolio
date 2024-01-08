@@ -18,5 +18,5 @@ modified: 2024 Jan 8
 This is my personal Portfolio web page.
 
 ## Links
-https://github.com/jacob-studer/Updated-Portfolio-Page-2
-https://jacob-studer.github.io/Updated-Portfolio-Page-2/
+https://github.com/jacob-studer/Jacob-Studer-Portfolio
+https://jacob-studer.github.io/Jacob-Studer-Portfolio/

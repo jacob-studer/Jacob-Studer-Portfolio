@@ -13,10 +13,20 @@
 
 </head>
 
+<script type="text/javascript">
+    if(navigator.userAgent.match(/iP(od|hone)/i) || navigator.userAgent.match(/Android/i)){
+        if(document.cookie.indexOf("iphone_redirect=false")==-1) {
+            window.location.href="https://jacob-studer.github.io/Jacob-Studer-Portfolio/html/error.html";
+        }
+    }
+</script>
+
 <body>
 
     <header>
-
+        <div class="additional-space">    
+            <p>.</p>
+        </div>
         <div>
             <h1 class="landing-page-header">Jacob Studer, Software Test Engineer</h1>
         </div>

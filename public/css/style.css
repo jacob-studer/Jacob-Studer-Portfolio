@@ -1,9 +1,13 @@
 body {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Open Sans', arial, sans-serif;
     background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+}
+
+.additional-space {
+    margin-top: 40px;
 }
 
 h1 {
@@ -19,6 +23,12 @@ h2 {
     color: white;
     font-size: 30px;
     /* z-index: 1; */
+}
+
+h3 {
+    font-size: 26;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
 .center-div {
@@ -42,6 +52,7 @@ h2 {
 div.links {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin: 20px;
 }
@@ -57,12 +68,12 @@ div.links {
     /* text-align: right; */
 }
 
-.link-margin-large {
+/* .link-margin-large {
     margin-left: 10px;
-}
+} */
 
 /* Link Hover effect */
-.btn{
+/* .btn{
     display: block;
     color: white;
     text-decoration: none;
@@ -84,8 +95,36 @@ div.links {
 
 .btn:hover::after{
     height: calc(100% + 8px)
-}
+} */
 
+.btn {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .btn:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .btn:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
 /* navbar */
 .navbar {
     display: flex;
@@ -110,7 +149,7 @@ div.links {
     text-decoration: none;
     color: white;
     padding: 5px 15px 5px 15px;
-    
+    text-align: center;
 }
 
 
@@ -207,7 +246,6 @@ div.headshot {
 .example-div {
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,6 +256,11 @@ div.headshot {
 .example-div-text{
     color:white;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 18;
+    text-shadow: 1px 1px 2px black;
     /* background: rgba(105,105,105, .5);
     border-radius: 4px; */
 }
